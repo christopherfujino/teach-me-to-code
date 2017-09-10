@@ -17,7 +17,7 @@ title: Teach Me To Code
 email: christopherfujino@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   The neverending story of how I learned to code.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: chrisfujino
 github_username:  christopherfujino
