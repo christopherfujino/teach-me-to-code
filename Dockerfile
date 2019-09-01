@@ -3,7 +3,7 @@ FROM jekyll/jekyll:4.0
 # When this is working, we'll use a bind mount, but to prevent f'ing up our
 # real blog, COPY
 
-VOLUME ["/srv/jekyll"]
+VOLUME ["/srv/jekyll", "/usr/local/bundle"]
 #COPY . /srv/jekyll
 RUN id -u jekyll
 RUN id -g jekyll
