@@ -1,0 +1,63 @@
+sha256:c8a589a58ed20476caf5cad12cba8e766afad7d313c40f56d767cbdba737dd55 25 hours ago492MB merge sha256:59c5047ca2cc5beedcb4de5eaadaae75b6cb09471fc55597ec8aaf7b2cf51501 to sha256:43d83f1327382c5be176045bf59e9f233ad4c1c9e7ac3753d131fc0fb6d3f1ea
+25 hours ago/bin/sh -c #(nop)EXPOSE 40000B
+25 hours ago/bin/sh -c #(nop)EXPOSE 35729 0B
+25 hours ago/bin/sh -c #(nop)VOLUME [/srv/jekyll] 0B
+25 hours ago/bin/sh -c #(nop) WORKDIR /srv/jekyll 0B
+25 hours ago/bin/sh -c #(nop)ENTRYPOINT ["/usr/jekyll/bin/entrypoint"]0B
+25 hours ago/bin/sh -c #(nop)CMD ["jekyll" "--help"]0B
+25 hours ago/bin/sh -c rm -rf $GEM_HOME/cache 0B
+25 hours ago/bin/sh -c rm -rf $BUNDLE_HOME/cache0B
+25 hours ago/bin/sh -c rm -rf /home/jekyll/.gem 0B
+25 hours ago/bin/sh -c rm -rf /root/.gem0B
+25 hours ago/bin/sh -c chown -R jekyll:jekyll $BUNDLE_HOME0B
+25 hours ago/bin/sh -c chown -R jekyll:jekyll $JEKYLL_VAR_DIR 0B
+25 hours ago/bin/sh -c chown -R jekyll:jekyll $JEKYLL_DATA_DIR0B
+25 hours ago/bin/sh -c mkdir -p $JEKYLL_DATA_DIR0B
+25 hours ago/bin/sh -c mkdir -p $JEKYLL_VAR_DIR 0B
+25 hours ago/bin/sh -c adduser-Su 1000 -G jekyll jekyll 0B
+25 hours ago/bin/sh -c addgroup -Sg 1000 jekyll 0B
+25 hours ago/bin/sh -c gem install html-proofer jekyll-reload jekyll-mentions jekyll-coffeescript jekyll-sass-converter jekyll-commonmark jekyll-paginate jekyll-compose jekyll-assets RedCloth kramdown jemoji jekyll-redirect-from jekyll-sitemap jekyll-feed minima -- --use-system-libraries0B
+25 hours ago/bin/sh -c gem install jekyll -v4.0.0 -- --use-system-libraries 0B
+25 hours ago/bin/sh -c unset GEM_HOME && unset GEM_BIN && yes | gem install --force bundler 0B
+25 hours ago/bin/sh -c unset GEM_HOME && unset GEM_BIN && yes | gem update --system 0B
+25 hours ago/bin/sh -c echo "gem: --no-ri --no-rdoc" > ~/.gemrc 0B
+25 hours ago/bin/sh -c apk --no-cache add linux-headers openjdk8-jre less zlib libxml2 readline libxslt libffi git nodejs tzdata shadow bash su-exec nodejs-npm libressl yarn 0B
+25 hours ago/bin/sh -c apk --no-cache add zlib-dev build-base libxml2-dev libxslt-dev readline-dev libffi-dev yaml-dev zlib-dev libffi-dev cmake0B
+25 hours ago/bin/sh -c #(nop)ENV DRAFTS=false 0B
+25 hours ago/bin/sh -c #(nop)ENV FORCE_POLLING=false0B
+25 hours ago/bin/sh -c #(nop)ENV VERBOSE=false0B
+25 hours ago/bin/sh -c #(nop)ENV LANGUAGE=en_US 0B
+25 hours ago/bin/sh -c #(nop)ENV LANG=en_US.UTF-8 0B
+25 hours ago/bin/sh -c #(nop)ENV LC_ALL=en_US.UTF-8 0B
+25 hours ago/bin/sh -c #(nop)ENV PATH=/usr/jekyll/bin:/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin 0B
+25 hours ago/bin/sh -c #(nop)ENV TZ=America/Chicago 0B
+25 hours ago/bin/sh -c #(nop)ENV LANGUAGE=en_US:en0B
+25 hours ago/bin/sh -c #(nop)ENV LANG=en_US.UTF-8 0B
+25 hours ago/bin/sh -c #(nop)ENV JEKYLL_ENV=development 0B
+25 hours ago/bin/sh -c #(nop)ENV JEKYLL_BIN=/usr/jekyll/bin 0B
+25 hours ago/bin/sh -c #(nop)ENV JEKYLL_DATA_DIR=/srv/jekyll0B
+25 hours ago/bin/sh -c #(nop)ENV JEKYLL_DOCKER_NAME=jekyll0B
+25 hours ago/bin/sh -c #(nop)ENV JEKYLL_DOCKER_COMMIT=0d12d4bc90b266ae4a38dfce9a511c52dd6f03110B
+25 hours ago/bin/sh -c #(nop)ENV JEKYLL_VERSION=4.0.0 0B
+25 hours ago/bin/sh -c #(nop)ENV JEKYLL_DOCKER_TAG=4.0.00B
+25 hours ago/bin/sh -c #(nop)ENV JEKYLL_VAR_DIR=/var/jekyll 0B
+25 hours ago/bin/sh -c #(nop)ENV GEM_HOME=/usr/gem0B
+25 hours ago/bin/sh -c #(nop)ENV GEM_BIN=/usr/gem/bin 0B
+25 hours ago/bin/sh -c #(nop)ENV BUNDLE_BIN=/usr/local/bundle/bin 0B
+25 hours ago/bin/sh -c #(nop)ENV BUNDLE_APP_CONFIG=/usr/local/bundle0B
+25 hours ago/bin/sh -c #(nop)ENV BUNDLE_HOME=/usr/local/bundle0B
+25 hours ago/bin/sh -c #(nop) COPY dir:39a250d09c629db641872fd2a8e59ae5dfb72d69ee0fd5fc6b65c57bb52bff38 in /0B
+25 hours ago/bin/sh -c #(nop)LABEL maintainer=Jordon Bedwell <jordon@envygeeks.io>0B
+3 days ago/bin/sh -c #(nop)CMD ["irb"]0B
+3 days ago/bin/sh -c mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME"0B
+3 days ago/bin/sh -c #(nop)ENV PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin 0B
+3 days ago/bin/sh -c #(nop)ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle0B
+3 days ago/bin/sh -c #(nop)ENV GEM_HOME=/usr/local/bundle 0B
+3 days ago/bin/sh -c set -eux; apk add --no-cache --virtual .ruby-builddeps autoconf bison bzip2 bzip2-dev ca-certificates coreutils dpkg-dev dpkg gcc gdbm-dev glib-dev libc-dev libffi-dev libxml2-dev libxslt-dev linux-headers make ncurses-dev openssl openssl-dev procps readline-dev ruby tar xz yaml-dev zlib-dev; wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz";echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum --check --strict; mkdir -p /usr/src/ruby;tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1;rm ruby.tar.xz; cd /usr/src/ruby; wget -O 'thread-stack-fix.patch' 'https://bugs.ruby-lang.org/attachments/download/7081/0001-thread_pthread.c-make-get_main_stack-portable-on-lin.patch';echo '3ab628a51d92fdf0d2b5835e93564857aea73e0c1de00313864a94a6255cb645 *thread-stack-fix.patch' | sha256sum --check --strict;patch -p1 -i thread-stack-fix.patch;rm thread-stack-fix.patch; { echo '#define ENABLE_PATH_CHECK 0'; echo; cat file.c;} > file.c.new;mv file.c.new file.c; autoconf;gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)";export ac_cv_func_isnan=yes ac_cv_func_isinf=yes;./configure --build="$gnuArch" --disable-install-doc --enable-shared;make -j "$(nproc)";make install; runDeps="$( scanelf --needed --nobanner --format '%n#p' --recursive /usr/local| tr ',' '\n'| sort -u| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }')";apk add --no-network --virtual .ruby-rundeps $runDeps bzip2 ca-certificates libffi-dev procps yaml-dev zlib-dev;apk del --no-network .ruby-builddeps; cd /;rm -r /usr/src/ruby;! apk --no-network list --installed | grep -v '^[.]ruby-rundeps' | grep -i ruby;[ "$(command -v ruby)" = '/usr/local/bin/ruby' ];ruby --version;gem --version;bundle --version 42MB
+3 days ago/bin/sh -c #(nop)ENV RUBY_DOWNLOAD_SHA256=df593cd4c017de19adf5d0154b8391bb057cef1b72ecdd4a8ee30d3235c65f090B
+3 days ago/bin/sh -c #(nop)ENV RUBY_VERSION=2.6.4 0B
+11 days ago /bin/sh -c #(nop)ENV RUBY_MAJOR=2.6 0B
+11 days ago /bin/sh -c set -eux;mkdir -p /usr/local/etc;{ echo 'install: --no-document'; echo 'update: --no-document';} >> /usr/local/etc/gemrc 45B 
+11 days ago /bin/sh -c apk add --no-cache gmp-dev 3.4MB 
+11 days ago /bin/sh -c #(nop)CMD ["/bin/sh"]0B
+11 days ago /bin/sh -c #(nop) ADD file:fe64057fbb83dccb960efabbf1cd8777920ef279a7fa8dbca0a8801c651bdf7c in /5.58MB
