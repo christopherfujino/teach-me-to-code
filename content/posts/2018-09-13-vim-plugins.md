@@ -1,8 +1,7 @@
 ---
 title: "Vim Plugins"
 date: 2018-09-13
-tags:
-layout: post
+draft: true
 ---
 
 ## tpope

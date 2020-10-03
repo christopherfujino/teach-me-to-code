@@ -1,7 +1,6 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
+# Used by server for caching
+resources
+# Build output
+public
 
 *.swp*
