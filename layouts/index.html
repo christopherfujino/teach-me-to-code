@@ -1,10 +1,9 @@
-<!-- See layouts/_default/baseof.html -->
-<span>Hi</span>
 {{ define "main" }}
 
+<!-- See layouts/_default/baseof.html -->
 <div id="home-jumbotron">
-  <h1> {{ .Site.Title }}</h1>
-  <!--<p>{{ .Site.Params.homeText | markdownify }}</p> -->
+  <h1>{{ .Site.Title }}</h1>
+  <p>{{ .Site.Params.homeText | markdownify }}</p>
 </div>
 
 {{ end }}

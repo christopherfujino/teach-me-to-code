@@ -2,8 +2,5 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Teach Me To Code"
 
-[permalinks]
-  posts = "/:filename/"
-
 [params]
   homeText = "You just made a Hugo blog from scratch."
