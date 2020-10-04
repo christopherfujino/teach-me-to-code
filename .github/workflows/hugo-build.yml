@@ -27,3 +27,20 @@ jobs:
           # Path to hugo project root
           source: blog/
           env: production
+
+      - name: Push to teach-me-to-code.github.io
+        uses: appleboy/gh-pages-action@v0.0.2
+        # https://github.com/appleboy/gh-pages-action/blob/master/action.yml
+        with:
+          # Secrets should be configured in GitHub as a repo setting
+          username: ${{ secrets.USERNAME }}
+          # Should be a personal access token
+          password: ${{ secrets.PASSWORD }}
+          remote_url: https://github.com/teach-me-to-code/teach-me-to-code.github.io
+          commit_author: coder_bot
+          commit_author_email: github-action@users.noreply.github.com
+          target_branch: master
+          # Directory of content to sync
+          target_directory: ./
+          # Directory of content to publish
+          pages_directory: blog/public/
