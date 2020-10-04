@@ -1,0 +1,23 @@
+name: Hugo-Build
+
+on: push
+
+jobs:
+  # Set the job key. The key is displayed as the job name when a job name is
+  # not provided
+  build-hugo:
+    # Name the job
+    name: Build static site with Hugo
+    # Set the docker image
+    runs-on: ubuntu-latest
+
+    steps:
+      # Check out repo
+      - name: Check out repo
+        uses: actions/checkout@v2
+
+      - name: For now, super-lint
+        uses: github/super-linter@v3
+        env:
+          DEFAULT_BRANCH: master
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
