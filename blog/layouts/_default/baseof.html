@@ -3,6 +3,7 @@
   <!-- https://gohugo.io/templates/base/#define-the-base-template -->
   {{ partial "head.html" . }}
   <body>
+    {{ partial "nav.html" . }}
     <div class="container">
       <main id="main">
         {{ block "main" . }}{{ end }}

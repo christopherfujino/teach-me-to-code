@@ -1,6 +1,0 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "Teach Me To Code"
-
-[params]
-  homeText = "You just made a Hugo blog from scratch."
