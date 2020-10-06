@@ -1,6 +1,6 @@
 ---
 title: A CSS Word-break Bug
-tags: 'CSS, bug'
+tags: ['CSS']
 date: 2016-09-12 16:05:11
 layout: post
 ---

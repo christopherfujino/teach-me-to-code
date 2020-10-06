@@ -1,6 +1,6 @@
 ---
 title: 'Git, Dotfiles, and the Dream of a Truly Cross-Platform Work Environment'
-tags: 'Linux, OS X, git, sysadmin'
+tags: ['Linux', 'OS X', 'git', 'sysadmin']
 date: 2016-06-28 17:24:21
 layout: post
 ---

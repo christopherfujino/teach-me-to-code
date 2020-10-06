@@ -4,10 +4,12 @@
   {{ partial "head.html" . }}
   <body>
     {{ partial "nav.html" . }}
-    <div class="container">
+    <!-- Margin and padding here to offset fixed nav -->
+    <div class="container mt-5 pt-4">
       <main id="main">
         {{ block "main" . }}{{ end }}
       </main>
+      {{ partial "footer.html" . }}
     </div>
   </body>
 </html>

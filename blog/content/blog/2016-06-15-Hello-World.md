@@ -1,7 +1,7 @@
 ---
 title: 'Hello, World!'
 date: 2016-06-15 16:11:47
-tags: javascript, node.js, markdown, hexo
+tags: ['JavaScript', 'node.js', 'markdown', 'hexo']
 ---
 
 Most programming blogs feature posts from veteran programmers teaching others new concepts and techniques. However, I am a beginning programmer and I plan to blog about the things I'm learning and the difficulties I'm having. Hopefully I can help other beginning programmers, but more importantly I hope people will get involved and teach me to code!

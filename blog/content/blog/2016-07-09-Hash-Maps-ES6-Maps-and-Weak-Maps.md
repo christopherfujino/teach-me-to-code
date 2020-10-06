@@ -1,6 +1,6 @@
 ---
 title: 'ES6 Maps, Weak Maps, and the Determinism of the JavaScript Garbage Collector'
-tags: 'JS, ES6'
+tags: [ 'JavaScript', 'ES6' ]
 date: 2016-07-09 18:13:42
 layout: post
 ---

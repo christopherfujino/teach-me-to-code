@@ -1,6 +1,6 @@
 ---
 title: Teaching C To A JavaScript Developer
-tags: JavaScript C
+tags: ['JavaScript', 'C', 'Programming Languages']
 date: 2016-07-21 17:52:14
 layout: post
 ---
