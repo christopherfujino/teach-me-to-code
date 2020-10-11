@@ -1,18 +1,10 @@
-<nav class="navbar fixed-top navbar-light bg-light navbar-expand-sm">
+<nav class="navbar pl-0 pr-0">
   <a href="/">Christopher Fujino</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                               data-target="#navbarMenu">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarMenu">
-    <ul id="nav" class="navbar-nav ml-auto">
-      {{ range .Site.Menus.main }}
-        {{ $text := print .Name | safeHTML }}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ .URL }}">{{ $text }}</a>
-        </li>
-      {{ end }}
-    </ul>
-  </div>
+  <ul class="nav ml-auto">
+    {{ range .Site.Menus.main }}
+      {{ $text := print .Name | safeHTML }}
+      <a class="nav-link" href="{{ .URL }}">{{ $text }}</a>
+    {{ end }}
+  </ul>
 </nav>

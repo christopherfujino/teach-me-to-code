@@ -3,9 +3,9 @@
   <!-- https://gohugo.io/templates/base/#define-the-base-template -->
   {{ partial "head.html" . }}
   <body>
-    {{ partial "nav.html" . }}
     <!-- Margin and padding here to offset fixed nav -->
-    <div class="container mt-5 pt-4">
+    <div class="container">
+      {{ partial "nav.html" . }}
       <main id="main">
         {{ block "main" . }}{{ end }}
       </main>
