@@ -61,4 +61,11 @@ arrays to keep track of their size.
 In C, strings are arrays of characters that are terminated with a null-byte
 (`\0`).
 
+```c
+char name[] = "Christopher";
+
+printf("Hello %s\n", name); // "Hello Christopher"
+printf("Last char code: %i\n", name[11]); // "Last char code: 0"
+```
+
 NOTE: all code samples tested with clang version 7.0.0.
