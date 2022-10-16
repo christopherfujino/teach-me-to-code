@@ -4,6 +4,30 @@ date: 2021-05-30 00:00:00
 layout: post
 ---
 
+## Primitive Types
+
+The primitive types in JavaScript are `number`, `string`, `boolean`,
+`undefined`, and `null`.
+
+```JavaScript
+var num = 42;
+var str = "Hello, world!";
+var bool = true;
+var undef; // an uninitialized variable has the value `undefined`
+var nul = null;
+```
+
+These types map closely to how a developer would use them in a program:
+numbers are obviously for counting and arithmetic, strings for storing textual
+data, booleans for values that must be either true or false, undefined for
+variables that have not yet been initialized, and null for variables that
+explicitly do not contain a value.
+
+The primitive types in C, however, much more closely map to how the underlying
+data is stored in memory. There are no strings, booleans (C99 technically
+added a boolean type, but these require a special header file and are largely
+synctactic sugar over )
+
 ## Pointers
 
 ```c
