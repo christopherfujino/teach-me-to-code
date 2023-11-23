@@ -1,0 +1,3 @@
+[submodule "third_party/mononoki"]
+	path = third_party/mononoki
+	url = git@github.com:madmalik/mononoki.git

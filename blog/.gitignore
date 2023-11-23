@@ -3,4 +3,9 @@ resources
 # Build output
 public
 
+# Run ./bootstrap-assets.sh to populate
+assets
+
+.hugo_build.lock
+
 *.swp*
