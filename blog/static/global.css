@@ -32,8 +32,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffcc66;
 }
 
-h1, h2, h3, h4, h5, h6, p, .p, code, footer, nav {
+h1, h2, h3, h4, h5, h6, p, .p, footer, nav, pre.chroma {
   margin-block-end: 1em;
+}
+
+pre.chroma {
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 a {
