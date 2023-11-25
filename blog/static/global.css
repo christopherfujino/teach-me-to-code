@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Mononoki";
+  {{ with resources.GetMatch "*" }}
+  src: url("{{ .RelPermalink }}") format("truetype");
+  {{ end }}
+}
+
+#global-container {
+  max-width: 1000px;
+  margin: auto;
+  margin-block-start: 1em;
+}
+
+html {
+  background-color: #2d2d2d;
+  color: #d3d0c8;
+  font-family: "Mononoki";
+}
+* {
+  font-size: 1em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+ul {
+  padding-inline-start: 4em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /* base0A - Classes, Markup Bold, Search Text Background */
+  color: #ffcc66;
+}
+
+h1, h2, h3, h4, h5, h6, p, .p, code, footer, nav {
+  margin-block-end: 1em;
+}
+
+a {
+  /* base08 - Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted */
+  color: #f2777a;
+}
+
+hr {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}

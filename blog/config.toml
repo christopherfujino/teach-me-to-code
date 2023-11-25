@@ -15,9 +15,34 @@ title = "Teach Me To Code"
     weight = 1
   [[menu.main]]
     name = "Tags"
-    url = "/tags/"
+    url = "/tags"
     weight = 2
   [[menu.main]]
-    name = "About"
-    url = "/about/"
+    name = "Résumé"
+    url = "/resume"
     weight = 3
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 4
+
+# https://gohugo.io/getting-started/configuration-markup/#highlight
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    noHl = false
+    # https://xyproto.github.io/splash/docs/longer/all.html
+    style = 'base16-snazzy'
+    tabWidth = 2
+  # https://gohugo.io/getting-started/configuration-markup/
+  [markup.goldmark.renderer]
+    unsafe = true

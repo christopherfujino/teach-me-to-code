@@ -1,10 +1,8 @@
-<nav class="navbar pl-0 pr-0">
+<nav>
   <a href="/">Christopher Fujino</a>
-
-  <ul class="nav ml-auto">
-    {{ range .Site.Menus.main }}
-      {{ $text := print .Name | safeHTML }}
-      <a class="nav-link" href="{{ .URL }}">{{ $text }}</a>
-    {{ end }}
-  </ul>
+  {{ range .Site.Menus.main }}
+    <span></span>
+    {{ $text := print .Name | safeHTML }}
+    <a href="{{ .URL }}">{{ $text }}</a>
+  {{ end }}
 </nav>

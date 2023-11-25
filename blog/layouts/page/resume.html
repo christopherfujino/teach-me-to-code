@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<div style="display: inline-block">
+<em>Christopher Fujino</em>
+<div>Senior Software Engineer at Google</div>
+</div>
+
+<div style="float: right; text-align: right;">
+  <div><a href="mailto:christopherfujino@gmail.com">christopherfujino@gmail.com</a></div>
+  <div><a href="https://github.com/christopherfujino" target="_blank">github.com/christopherfujino</a></div>
+</div>
+
+<span style="clear: both; display: table;"></span>
+
+<hr>
+
+{{ range .Params.jobs }}
+  <p>
+    <div class=p style="display: inline-block;">
+      <div>
+        <em>{{ .company }}</em>
+        <span>&#x21D2;</span>
+        <span>{{ .title }}</span>
+      </div>
+      <div>{{ .role }}</div>
+    </div>
+    <div style="float: right;">
+      <div>{{ .tenure }}</div>
+    </div>
+    <span style="clear: both; display: table;"></span>
+    <div>
+      {{ .description | safeHTML }}
+    </div>
+  </p>
+{{ end }}
+
+{{ end }}

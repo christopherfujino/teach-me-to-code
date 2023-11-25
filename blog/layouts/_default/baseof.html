@@ -4,7 +4,7 @@
   {{ partial "head.html" . }}
   <body>
     <!-- Margin and padding here to offset fixed nav -->
-    <div class="container">
+    <div id="global-container">
       {{ partial "nav.html" . }}
       <main id="main">
         {{ block "main" . }}{{ end }}
