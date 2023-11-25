@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<h1>$ ls blog/posts -l</h1>
+<h1>$ ls content/blog -l</h1>
 <table class=ls-l-table>
   {{ range .Pages.ByPublishDate.Reverse }}
     <tr>
