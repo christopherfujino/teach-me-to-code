@@ -9,6 +9,7 @@ title = "Teach Me To Code"
   blog = "/:filename/"
 
 [menu]
+  # layouts/partials/nav.html iterates over .Site.Menus.main
   [[menu.main]]
     name = "Blog"
     url = "/blog"
@@ -21,10 +22,6 @@ title = "Teach Me To Code"
     name = "Résumé"
     url = "/resume"
     weight = 3
-  [[menu.main]]
-    name = "About"
-    url = "/about"
-    weight = 4
 
 # https://gohugo.io/getting-started/configuration-markup/#highlight
 [markup]

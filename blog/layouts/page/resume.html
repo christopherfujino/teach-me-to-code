@@ -16,7 +16,14 @@
 
 <h1>Experience</h1>
 
+{{ $firstJob := true }}
 {{ range .Params.jobs }}
+  {{ if $firstJob }}
+    {{ $firstJob = false}}
+  {{ else }}
+    <hr>
+  {{ end }}
+
   <p>
     <div class=p style="display: inline-block;">
       <div>
@@ -34,6 +41,7 @@
       {{ .description | safeHTML }}
     </div>
   </p>
+
 {{ end }}
 
 {{ end }}

@@ -1,7 +1,7 @@
 <nav>
   <a href="/">Christopher Fujino</a>
   {{ range .Site.Menus.main }}
-    <span></span>
+    <span>&#xE0B1;</span>
     {{ $text := print .Name | safeHTML }}
     <a href="{{ .URL }}">{{ $text }}</a>
   {{ end }}
