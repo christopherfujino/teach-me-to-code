@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <div style="display: inline-block">
-<em>Christopher Fujino</em>
+<em class=base16-0A>Christopher Fujino</em>
 <div>Senior Software Engineer at Google</div>
 </div>
 
@@ -14,18 +14,20 @@
 
 <hr>
 
+<h1>Experience</h1>
+
 {{ range .Params.jobs }}
   <p>
     <div class=p style="display: inline-block;">
       <div>
-        <em>{{ .company }}</em>
+        <em class=base16-0D>{{ .company }}</em>
         <span>&#x21D2;</span>
         <span>{{ .title }}</span>
       </div>
-      <div>{{ .role }}</div>
+      <div class=base16-03>{{ .role }}</div>
     </div>
     <div style="float: right;">
-      <div>{{ .tenure }}</div>
+      <div class=base16-0B>{{ .tenure }}</div>
     </div>
     <span style="clear: both; display: table;"></span>
     <div>

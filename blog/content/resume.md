@@ -18,8 +18,10 @@
   },
   {
     "company": "Rocksbox",
-    "tenure": "Sep 2017 - February 2019",
+    "companyLink": "https://www.rocksbox.com",
+    "tenure": "Sep 2017 - Feb 2019",
     "title": "Software Engineer",
+    "role": "Full-Stack Web Developer",
     "description": "<div class=p>Full stack web developer on a small engineering team, specializing in the backend.</div><div class=p>Set up the frontend JavaScript build configuration and initial architecture for a complete refactor of the codebase from jQuery to React.</div><div class=p>Leveraged previous experience with Linux Systems Administration to lead most DevOps tasks, maintaining configuration, cloud container infrastructure orchestration, and database maintenance.</div>"
   }
 ]
