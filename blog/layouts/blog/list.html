@@ -8,12 +8,16 @@
       <td>1</td>
       <td>chris</td>
       <td>chris</td>
-      <td>14K</td> <!-- TODO figure out -->
+      <td style="text-align: right"><span>
+        {{ $file := os.Stat .File }}
+        {{ $fileInfo := $file.FileInfo }}
+        {{ $fileInfo.Size }}
+      </span></td>
       <td>{{ .Date.Format "Jan" }}</td>
       <td>{{ .Date.Format "02" }}</td>
       <td>{{ .Date.Format "2006" }}</td>
       <!-- https://gohugo.io/functions/strings/replacere/ -->
-      <td><a href="{{ .RelPermalink }}"><span>{{ replaceRE `^[0-9]+-[0-9]+-[0-9]+-` "" .LogicalName }}</span></a></td>
+      <td><a href="{{ .RelPermalink }}"><span>{{ replaceRE `^[0-9]+-[0-9]+-[0-9]+-` "" .File.LogicalName }}</span></a></td>
     </tr>
   {{ end }}
 </table>
