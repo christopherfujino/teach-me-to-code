@@ -37,7 +37,7 @@ jobs:
           # Should be a personal access token
           password: ${{ secrets.PASSWORD }}
           remote_url: https://github.com/teach-me-to-code/teach-me-to-code.github.io
-          commit_author: coder_bot
+          commit_author: roy_batty
           commit_author_email: github-action@users.noreply.github.com
           target_branch: master
           # Directory of content to sync
