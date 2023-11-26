@@ -49,3 +49,11 @@ enableGitInfo = true
   # https://gohugo.io/getting-started/configuration-markup/
   [markup.goldmark.renderer]
     unsafe = true
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    source = '../third_party/mononoki/export/'
+    target = 'assets'

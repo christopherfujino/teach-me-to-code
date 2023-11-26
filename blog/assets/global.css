@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Mononoki";
-  {{ with resources.GetMatch "*" }}
+  font-family: "Mononokiz";
+  {{ with resources.Get "mononoki-Regular.ttf" }}
   src: url("{{ .RelPermalink }}") format("truetype");
   {{ end }}
 }
@@ -21,7 +21,7 @@ html {
   font-size: 1em;
   margin-block-start: 0em;
   margin-block-end: 0em;
-  font-family: "Mononoki";
+  font-family: "Mononokiz";
 }
 
 ul {
