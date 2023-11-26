@@ -18,6 +18,10 @@ jobs:
       # Check out repo
       - name: Check out repo
         uses: actions/checkout@v4
+        with:
+          submodules: true
+          # https://stackoverflow.com/questions/72978485/git-submodule-update-failed-with-fatal-detected-dubious-ownership-in-repositor
+          set-safe-directory: '*'
 
       # TODO set up our own action in this repo
       - name: Manually build hugo
@@ -26,6 +30,7 @@ jobs:
         run: |
           ls -alh
           pwd
+          (cd blog && bootstrap-assets.sh)
           (cd blog && hugo)
 
       - name: Push to teach-me-to-code.github.io
