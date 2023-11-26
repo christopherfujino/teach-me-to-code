@@ -4,7 +4,7 @@ resources
 public
 
 # Run ./bootstrap-assets.sh to populate
-assets
+static
 
 .hugo_build.lock
 
