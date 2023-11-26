@@ -21,6 +21,8 @@ jobs:
 
       # TODO set up our own action in this repo
       - name: Manually build hugo
+        # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#custom-shell
+        shell: bash -exo pipefail {0}
         run: |
           ls -alh
           pwd
