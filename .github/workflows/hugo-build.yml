@@ -27,11 +27,12 @@ jobs:
       - name: Manually build hugo
         # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#custom-shell
         shell: bash -exo pipefail {0}
+        working-directory: ./blog
         run: |
           ls -alh
           pwd
-          (cd blog && bootstrap-assets.sh)
-          (cd blog && hugo)
+          ./bootstrap-assets.sh
+          hugo
 
       - name: Push to teach-me-to-code.github.io
         uses: appleboy/gh-pages-action@v0.0.2
