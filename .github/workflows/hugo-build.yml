@@ -21,6 +21,8 @@ jobs:
         run: |
           ls -alh
           pwd
+          apt-get update
+          apt-get install hugo
           (cd blog && hugo)
 
       - name: Push to teach-me-to-code.github.io
