@@ -9,6 +9,7 @@
   max-width: 55em;
   margin: auto;
   margin-block-start: 1em;
+  visibility: hidden; /* will be revealed in main.js */
 }
 
 html {

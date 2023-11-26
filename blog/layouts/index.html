@@ -1,6 +1,6 @@
 {{ define "main" }}
   {{ with .Site.GetPage "/posts" }}
-    <h1>$ ls content/blog -l</h1>
+    <h1>$ ls -l content/posts</h1>
     <table class=ls-l-table>
     {{ range .Pages }}
       <tr>
