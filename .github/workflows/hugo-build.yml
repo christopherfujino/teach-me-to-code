@@ -23,7 +23,7 @@ jobs:
         with:
           # https://hub.docker.com/r/klakegg/hugo/tags
           version: 0.75.1
-          image: debian
+          image: ubuntu-latest
           # Path to hugo project root
           source: blog/
           env: production
