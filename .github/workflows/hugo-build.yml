@@ -33,6 +33,7 @@ jobs:
           pwd
           type -a git
           ./bootstrap-assets.sh
+          git config --global --add safe.directory '*'
           hugo
 
       - name: Push to teach-me-to-code.github.io
