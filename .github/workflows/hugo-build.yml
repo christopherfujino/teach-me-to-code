@@ -8,8 +8,11 @@ jobs:
   build-hugo:
     # Name the job
     name: Build static site with Hugo
-    # Set the docker image
+    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#choosing-github-hosted-runners
     runs-on: ubuntu-latest
+    container:
+      # https://hub.docker.com/r/klakegg/hugo/tags
+      image: klakegg/hugo:0.111.3-ext-ubuntu-onbuild
 
     steps:
       # Check out repo
