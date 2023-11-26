@@ -25,36 +25,19 @@ addEventListener("DOMContentLoaded", function () {
 
   /// Vim keybindings
   (function () {
-    let inMultiKeyMotion = false;
-    let multiKeyMotion = null;
-    // See :help timeoutlen
-    const timeoutlen = 750;
-
+    const termInputSpan = document.querySelector("#terminal-input");
+    let buffer = [];
     window.addEventListener("keydown", function (event) {
-      console.log("you pressed", event);
-      const dy = 50;
-      switch (event.key) {
-        case "j":
-          window.scrollBy({top: dy, behavior: "instant"});
-          break;
-        case "k":
-          window.scrollBy({top: -dy, behavior: "instant"});
-          break;
-        case "g":
-          if (inMultiKeyMotion) {
-            inMultiKeyMotion = false;
-            window.scrollBy({top: -999999999, behavior: "instant"});
-            console.log("scrolled to top");
-          } else {
-            inMultiKeyMotion = true;
-            multiKeyMotion = [event.key];
-            setTimeout(() => inMultiKeyMotion = false, timeoutlen);
-            console.log("setting ing = true");
-          }
-          break;
-        case "G":
-          window.scrollBy({top: 999999999, behavior: "instant"});
-          break;
+      if (event.key.length === 1 && ((event.key >= "a" && event.key <= "z") || (event.key >= "A" && event.key <= "Z"))) {
+        buffer.push(event.key);
+        termInputSpan.innerText = buffer.join("");
+      } else if (event.key === "Backspace") {
+        if (buffer.length > 0) {
+          buffer.pop();
+          termInputSpan.innerText = buffer.join("");
+        }
+      } else {
+        console.error("don't know what a ", event.key, " is");
       }
     });
   })();
