@@ -23,15 +23,11 @@ jobs:
           # https://stackoverflow.com/questions/72978485/git-submodule-update-failed-with-fatal-detected-dubious-ownership-in-repositor
           set-safe-directory: true
 
-      # TODO set up our own action in this repo
       - name: Manually build hugo
         # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#custom-shell
         shell: bash -exo pipefail {0}
         working-directory: ./blog
         run: |
-          ls -alh
-          pwd
-          type -a git
           ./bootstrap-assets.sh
           git config --global --add safe.directory '*'
           hugo
