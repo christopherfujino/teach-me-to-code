@@ -11,8 +11,9 @@ jobs:
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#choosing-github-hosted-runners
     runs-on: ubuntu-latest
     container:
-      # https://hub.docker.com/r/klakegg/hugo/tags
-      image: klakegg/hugo:0.111.3-ext-ubuntu-onbuild
+      # https://hub.docker.com/_/golang
+      # Bookworm == Debian 12, stable as of 11/26/23
+      image: golang:1.21.4-bookworm
 
     steps:
       # Check out repo
@@ -23,14 +24,20 @@ jobs:
           # https://stackoverflow.com/questions/72978485/git-submodule-update-failed-with-fatal-detected-dubious-ownership-in-repositor
           set-safe-directory: true
 
-      - name: Manually build hugo
+      - name: Build hugo
+        shell: bash -exo pipefail {0}
+        working-directory: ./third_party/hugo
+        run: |
+          git config --global --add safe.directory '*'
+          go build .
+
+      - name: Build site
         # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#custom-shell
         shell: bash -exo pipefail {0}
         working-directory: ./blog
         run: |
-          ./bootstrap-assets.sh
           git config --global --add safe.directory '*'
-          hugo
+          ../third_party/hugo/hugo
 
       - name: Push to teach-me-to-code.github.io
         uses: appleboy/gh-pages-action@v0.0.2
