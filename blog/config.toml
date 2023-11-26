@@ -10,13 +10,12 @@ enableGitInfo = true
 [permalinks]
   blog = "/:filename/"
 
+[taxonomies]
+  tag = 'tags'
+
 [menu]
   # layouts/partials/nav.html iterates over .Site.Menus.main
   # https://gohugo.io/content-management/menus/#properties-site-configuration
-  [[menu.main]]
-    name = "Blog"
-    pageRef = "/posts"
-    weight = 1
   [[menu.main]]
     name = "Tags"
     pageRef = "/tags"
@@ -50,6 +49,3 @@ enableGitInfo = true
   # https://gohugo.io/getting-started/configuration-markup/
   [markup.goldmark.renderer]
     unsafe = true
-
-[taxonomies]
-  post = 'posts'

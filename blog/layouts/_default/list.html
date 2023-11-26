@@ -1,6 +1,8 @@
 {{ define "main" }}
 
 <h1>{{ .Title }}</h1>
+<div>in layouts/_default/list.html</div>
+<div> {{ . }}</div>
 {{ range .Pages.ByPublishDate.Reverse }}
   <p>
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
