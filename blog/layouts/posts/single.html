@@ -1,0 +1,7 @@
+{{ define "main" }}
+
+<h1 style="display: inline-block">{{ .Title }}</h1>
+<div style="display: inline-block"><em>{{ .Date.Format "Jan 01 2006" }}</em></div>
+{{ .Content }}
+
+{{ end }}
