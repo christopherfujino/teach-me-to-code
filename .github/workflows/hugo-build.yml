@@ -28,6 +28,7 @@ jobs:
         shell: bash -exo pipefail {0}
         working-directory: ./third_party/hugo
         run: |
+          git config --global --add safe.directory '*'
           go build .
 
       - name: Build site
