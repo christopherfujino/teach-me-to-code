@@ -31,6 +31,7 @@ jobs:
         run: |
           ls -alh
           pwd
+          type -a git
           ./bootstrap-assets.sh
           hugo
 
