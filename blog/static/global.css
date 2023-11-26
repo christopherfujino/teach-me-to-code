@@ -6,7 +6,7 @@
 }
 
 #global-container {
-  max-width: 1000px;
+  max-width: 55em;
   margin: auto;
   margin-block-start: 1em;
 }
@@ -51,6 +51,7 @@ hr {
   margin-block-end: 1em;
 }
 
+/* https://github.com/chriskempson/base16-default-schemes/blob/master/eighties.yaml */
 .base16-00 {color: #2d2d2d;}
 .base16-01 {color: #393939;}
 .base16-02 {color: #515151;}
