@@ -3,9 +3,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>{{ .Title }}</title>
   <!-- static files will be served relative to site root -->
-  {{ with resources.Get "global.css" | resources.Minify | resources.Fingerprint }}
+  {{ with resources.Get "global.css" | resources.Fingerprint }}
     {{ with resources.ExecuteAsTemplate "global-style.css" $ .}}
-      <link rel="stylesheet" type="text/css" href="{{ .Permalink }}" />
+      {{ with . | resources.Minify }}
+        <link rel="stylesheet" type="text/css" href="{{ .Permalink }}" />
+      {{ end }}
     {{ end }}
   {{ end }}
   {{ $syntaxCss := resources.Get "syntax.css" | resources.Minify | resources.Fingerprint }}
