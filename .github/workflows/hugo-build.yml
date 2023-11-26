@@ -14,19 +14,14 @@ jobs:
     steps:
       # Check out repo
       - name: Check out repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       # TODO set up our own action in this repo
-      - name: Build production site
-        # https://github.com/klakegg/actions-hugo
-        uses: klakegg/actions-hugo@1.0.0
-        with:
-          # https://hub.docker.com/r/klakegg/hugo/tags
-          version: 0.75.1
-          image: ubuntu-latest
-          # Path to hugo project root
-          source: blog/
-          env: production
+      - name: Manually build hugo
+        run: |
+          ls -alh
+          pwd
+          (cd blog && hugo)
 
       - name: Push to teach-me-to-code.github.io
         uses: appleboy/gh-pages-action@v0.0.2
