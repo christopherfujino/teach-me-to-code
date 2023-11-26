@@ -8,25 +8,33 @@ jobs:
   build-hugo:
     # Name the job
     name: Build static site with Hugo
-    # Set the docker image
+    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#choosing-github-hosted-runners
     runs-on: ubuntu-latest
+    container:
+      # https://hub.docker.com/r/klakegg/hugo/tags
+      image: klakegg/hugo:0.111.3-ext-ubuntu-onbuild
 
     steps:
       # Check out repo
       - name: Check out repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4.1.1
+        with:
+          submodules: true
+          # https://stackoverflow.com/questions/72978485/git-submodule-update-failed-with-fatal-detected-dubious-ownership-in-repositor
+          set-safe-directory: true
 
       # TODO set up our own action in this repo
-      - name: Build production site
-        # https://github.com/klakegg/actions-hugo
-        uses: klakegg/actions-hugo@1.0.0
-        with:
-          # https://hub.docker.com/r/klakegg/hugo/tags
-          version: 0.75.1
-          image: debian
-          # Path to hugo project root
-          source: blog/
-          env: production
+      - name: Manually build hugo
+        # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#custom-shell
+        shell: bash -exo pipefail {0}
+        working-directory: ./blog
+        run: |
+          ls -alh
+          pwd
+          type -a git
+          ./bootstrap-assets.sh
+          git config --global --add safe.directory '*'
+          hugo
 
       - name: Push to teach-me-to-code.github.io
         uses: appleboy/gh-pages-action@v0.0.2
