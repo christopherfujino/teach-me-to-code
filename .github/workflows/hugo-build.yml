@@ -17,11 +17,11 @@ jobs:
     steps:
       # Check out repo
       - name: Check out repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.1.1
         with:
           submodules: true
           # https://stackoverflow.com/questions/72978485/git-submodule-update-failed-with-fatal-detected-dubious-ownership-in-repositor
-          set-safe-directory: '*'
+          set-safe-directory: true
 
       # TODO set up our own action in this repo
       - name: Manually build hugo
