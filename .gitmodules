@@ -1,3 +1,6 @@
 [submodule "third_party/mononoki"]
 	path = third_party/mononoki
 	url = git@github.com:madmalik/mononoki.git
+[submodule "third_party/hugo"]
+	path = third_party/hugo
+	url = git@github.com:gohugoio/hugo.git
