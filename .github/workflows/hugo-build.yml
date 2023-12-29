@@ -41,6 +41,7 @@ jobs:
 
       - name: Push to teach-me-to-code.github.io
         uses: appleboy/gh-pages-action@v0.0.2
+        if: github.ref == 'refs/heads/master'
         # https://github.com/appleboy/gh-pages-action/blob/master/action.yml
         with:
           # Secrets should be configured in GitHub as a repo setting
