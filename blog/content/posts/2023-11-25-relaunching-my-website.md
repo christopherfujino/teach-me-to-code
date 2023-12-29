@@ -71,7 +71,7 @@ website is hosted).
 So what is the catch? The downside of this approach is that there is added
 complexity in terms of the tooling used to build the website. Throughout the
 years, I've tried Jekyll (in Ruby), Hexo (in JavaScript, detailed in my [first
-blog post]({{< relref "/posts/2016-06-15-hello-world" >}}), and Hugo (in Go).
+blog post]({{< relref "/posts/2016-06-15-hello-world" >}})), and Hugo (in Go).
 Each of these had the usual problems and complexities associated with using
 an application framework in the given ecosystem. Although it is true that
 *writing content* is fairly straightforward with a static site generator,
