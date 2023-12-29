@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffcc66;
 }
 
-h1, h2, h3, h4, h5, h6, p, .p, footer, nav, pre.chroma {
+h1, h2, h3, h4, h5, h6, p, ul, ol, .p, footer, nav, pre.chroma {
   margin-block-end: 1em;
 }
 

@@ -6,6 +6,8 @@ enableGitInfo = true
 
 [params]
   homeText = "You just made a Hugo blog from scratch."
+  repo = "https://github.com/christopherfujino/teach-me-to-code"
+  gitMainBranch = "master"
 
 [permalinks]
   blog = "/:filename/"

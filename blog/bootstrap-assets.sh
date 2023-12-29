@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
-mkdir --parents static
+set -ex
+
+mkdir -p static
 cp ../third_party/mononoki/export/mononoki-Regular.ttf static/
