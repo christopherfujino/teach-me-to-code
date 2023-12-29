@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<h1>$ sed -n 's/tags: \[\(.*\)\]/\1/p' content/blog/*.md | sort</h1>
+<h1>Tags</h1>
 {{ range .Pages.ByTitle }}
   <div>
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
