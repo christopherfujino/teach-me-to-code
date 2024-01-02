@@ -27,9 +27,13 @@ enableGitInfo = true
     pageRef = "/resume"
     weight = 3
   [[menu.main]]
+    name = "Recommendations"
+    pageRef = "/recommendations"
+    weight = 4
+  [[menu.main]]
     name = "About"
     pageRef = "/about"
-    weight = 4
+    weight = 5
 
 # https://gohugo.io/getting-started/configuration-markup/#highlight
 [markup]

@@ -49,6 +49,11 @@ pre.chroma {
 a {
   /* base08 - Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted */
   color: #f2777a;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 hr {
