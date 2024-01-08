@@ -20,11 +20,16 @@
     "date": "2020-09-02"
   },
   {
+    "url": "https://nadia.xyz/top-talent",
+    "title": "Explaining tech's notion of talent scarcity",
+    "date": "2023-04-25",
+    "author": "Nadia Asparouhova"
+  },
+  {
     "url": "https://filiph.net/text/(personally)-sustainable-social-media.html",
     "title": "(Personally) sustainable social media",
     "author": "Filip Hráček",
     "date": "2024-01-01"
   }
-
 ]
 }

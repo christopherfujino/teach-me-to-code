@@ -5,8 +5,9 @@
     <p>
       <!-- https://github.com/gohugoio/hugo/commit/37490ee27af10f14aa40bd5e2ae39952b21ac1bb -->
       <!-- TODO right-pad author -->
-      <span>{{ dateFormat "Jan 02 2006" .date }} - {{ .author }} - </span>
+      <span>{{ dateFormat "Jan 02 2006" .date }} - </span>
       <a href="{{ .url }}">{{ .title }}</a>
+      <span>- {{ .author }}</span>
     </p>
   {{ end }}
 {{ end }}
