@@ -5,7 +5,6 @@ date: 2016-07-21 17:52:14
 layout: post
 ---
 
-
 According to Douglas Crockford, [JavaScript is the world's most misunderstood programming language](http://www.crockford.com/javascript/javascript.html), and I am inclined to agree. Especially in the '90s, I think a lot of programmers first encountered JavaScript from a C/C++ or Java background (indeed, JavaScript-inventor Brendan Eich has said that he was tasked with creating Java's little brother to run in the browser). I was one of them. We found the syntax very familiar. In fact, after reading a tutorial or two, I was able to write a slot machine game. JavaScript is such a flexible language that it is possible to write all kinds of applications in it without really understanding how the language works.
 
 This has led to books such as those in the [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS) series. This has also led me to ask myself the question: is JavaScript a good first language for a programmer to learn? Certainly it would be easy to do some cool things with the language, but what about when the time comes to learn about [variable hoisting](http://www.w3schools.com/js/js_hoisting.asp)? And I only recently learned that JavaScript always passes by value, [even if that value happens to be a reference(?!)](http://stackoverflow.com/questions/518000/is-javascript-a-pass-by-reference-or-pass-by-value-language).
