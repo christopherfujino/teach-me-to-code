@@ -20,6 +20,12 @@
     "date": "2020-09-02"
   },
   {
+    "url": "https://matklad.github.io/2020/09/13/your-language-sucks.html",
+    "title": "Your Language Sucks, It Doesn't Matter",
+    "author": "Alex Kladov",
+    "date": "2020-09-13"
+  },
+  {
     "url": "https://nadia.xyz/top-talent",
     "title": "Explaining tech's notion of talent scarcity",
     "date": "2023-04-25",
