@@ -9,3 +9,8 @@ draft: true
 let sum x y = x + y;;
 val sum : int -> int -> int = <fun>
 ```
+
+```typescript
+let sum = (x: number) => (y: number) => x + y;
+// let sum: (x: number) => (y: number) => number
+```
