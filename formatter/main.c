@@ -100,6 +100,7 @@ void free_buffer(Buffer *buffer) {
 }
 
 Buffer *process_line(Buffer *buffer) {
+  // TODO check for and handle front-matter
   int overflow = buffer->size - MAX_WIDTH;
   if (overflow <= 0) {
     // https://stackoverflow.com/questions/256218/the-simplest-way-of-printing-a-portion-of-a-char-in-c
@@ -113,6 +114,7 @@ Buffer *process_line(Buffer *buffer) {
     int end_ptr = buffer->size - 1;
     while (true) {
       if (is_whitespace(buffer->buffer[end_ptr])) {
+        // TODO check for more whitespace to trim off the end
         if (end_ptr <= (MAX_WIDTH - 1)) {
           // found the optimal line ending
           printf("%.*s\n", end_ptr + 1, buffer->buffer);
@@ -131,7 +133,8 @@ Buffer *process_line(Buffer *buffer) {
       }
       end_ptr -= 1;
       if (end_ptr == 0) {
-        fprintf(stderr, "TODO 1\n");
+        // TODO use best_end_ptr
+        fprintf(stderr, "TODO\n");
         abort();
       }
     }
