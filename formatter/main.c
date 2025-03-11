@@ -22,7 +22,7 @@ bool is_whitespace(char c);
 
 int main(int argc, char **argv) {
   if (argc != 2) {
-    fprintf(stderr, "Usage: formatter markdown_file");
+    fprintf(stderr, "Usage: formatter markdown_file\n");
     exit(1);
   }
   const char *target_path = argv[1];
