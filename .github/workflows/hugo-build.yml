@@ -41,12 +41,16 @@ jobs:
 
       - name: Push to teach-me-to-code.github.io
         uses: appleboy/gh-pages-action@v0.0.2
+        # Only on post-submit to master
         if: github.ref == 'refs/heads/master'
         # https://github.com/appleboy/gh-pages-action/blob/master/action.yml
         with:
           # Secrets should be configured in GitHub as a repo setting
           username: ${{ secrets.USERNAME }}
-          # Should be a personal access token
+          # Should be a (classic) personal access token
+          # with
+          # [x] repo  Full control of private repositories
+          # Expires Apr 7 2026
           password: ${{ secrets.PASSWORD }}
           remote_url: https://github.com/teach-me-to-code/teach-me-to-code.github.io
           commit_author: roy_batty
