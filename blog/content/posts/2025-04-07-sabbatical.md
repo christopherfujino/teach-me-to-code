@@ -1,6 +1,6 @@
 ---
-title: 'Resigning from Google'
-date: 2025-04-07 00:00:00
+title: 'Google -> Sabbatical'
+date: 2025-04-18 00:00:00
 tags: ['sabbatical', 'career', 'google']
 draft: true
 ---
@@ -55,15 +55,12 @@ about.
 
 At the end of the day I became fed up with the corporate bureaucracy and with
 decision-making that placed profit percentage points over the well-being of
-people. There were some other things that I hadn't anticipated that also made
-me fed up, but I'm not writing this to enumerate gripes. In fact, I found
-myself complaining about work so much that I didn't like who I was becoming,
-and so it seemed necessary for me to quit my job to be the kind of person I
-would like to be.
+people. There were some other things that I hadn't anticipated that I also
+became fed up with, but it's not my goal to enumerate gripes. In fact, I was
+convinced it was necessary for me to leave because I found myself complaining
+about work so often.
 
-Which is why I've decided to take a sabbatical. To be clear, this is not leave
-granted by my employer; I resigned my position and am definitely unemployed.
-Neither am I looking for a job. Before I decided on taking a sabbatical, I
+So I've decided to take a sabbatical. Neither am I looking for a job. Before I decided on taking a sabbatical, I
 *did* look at other jobs. However, I had the sinking feeling that it would be
 more of the same. I've never been one to hop from one rock to the next, just
 because I'm tired of the previous rock.
@@ -72,12 +69,15 @@ I'm taking time to detox myself from all the negatives of what I didn't like
 about my previous job--and the industry in general--and instead think about
 what positive things I can and will do.
 
-Some of the random, not necessarily
-connected thoughts I've had:
+Some of the random, not necessarily connected thoughts I've had:
 
-*Technology should empower users. Technology should be a tool like a
-hammer, or even a pencil.*
+*Technology should empower users. Like a hammer, or even a pencil.*
 
 *Learning should be curiosity-driven. Teaching should be personal.*
 
-*Greatness can be achieved if you're willing to settle for less money.*
+*Many moral paradoxes are easily resolved if you're willing to make less
+money.*
+
+Privately, an agent can be a father, a friend, an inspiring force in the life of a young man or woman. We are sometimes as important as priests or poets, but until we dedicate ourselves to worthier goals than getting a illegal phone number, we are poets of emptiness.
+
+I have said "later" to most anything that required true sacrifice. Later I will spend a weekend reading real books, not just magazines. Later I will visit my grandmother who is 100 and unable to really know the difference. Later I will visit the clients whose careers are over, but of course I promised to stay in touch. Later later later later. It is too easy to say “later” because we all believe our work to be too important to stop, minute to minute, for something that might interfere with the restless and relentless pursuit of forward motion. Of greater success.
