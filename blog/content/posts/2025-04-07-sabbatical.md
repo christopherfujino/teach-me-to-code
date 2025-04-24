@@ -2,16 +2,16 @@
 title: 'Google -> Sabbatical'
 date: 2025-04-18 00:00:00
 tags: ['sabbatical', 'career', 'google']
-draft: true
+draft: false
 ---
 
 Last month I resigned my position at Google.
 
-To put my resignation in some context, I never intended to work at Google for
-as long as I did. In fact, I never intended to work at Google in the first
-place. Without having a formal computer science background, I assumed that
-getting a job at a big tech company was out of the question and so I never
-even considered whether or not I would like such a job.
+I never intended to work at Google for as long as I did. In fact, I never
+intended to work at Google in the first place. Without having a formal
+computer science background, I assumed that getting a job at a big tech
+company was out of the question and so I never even considered whether or not
+I would like such a job.
 
 When I was recruited for a role at Google, I knew I had to interview for it,
 if for no other reason than that I would always wonder what would it would
@@ -60,10 +60,7 @@ became fed up with, but it's not my goal to enumerate gripes. In fact, I was
 convinced it was necessary for me to leave because I found myself complaining
 about work so often.
 
-So I've decided to take a sabbatical. Neither am I looking for a job. Before I decided on taking a sabbatical, I
-*did* look at other jobs. However, I had the sinking feeling that it would be
-more of the same. I've never been one to hop from one rock to the next, just
-because I'm tired of the previous rock.
+So I've decided to take a sabbatical.
 
 I'm taking time to detox myself from all the negatives of what I didn't like
 about my previous job--and the industry in general--and instead think about
