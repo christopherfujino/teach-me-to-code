@@ -2,7 +2,7 @@
 title: 'Google -> Sabbatical'
 date: 2025-04-18 00:00:00
 tags: ['sabbatical', 'career', 'google']
-draft: false
+draft: true
 ---
 
 Last month I resigned my position at Google.
