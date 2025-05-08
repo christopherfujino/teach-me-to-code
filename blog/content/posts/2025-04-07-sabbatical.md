@@ -65,16 +65,3 @@ So I've decided to take a sabbatical.
 I'm taking time to detox myself from all the negatives of what I didn't like
 about my previous job--and the industry in general--and instead think about
 what positive things I can and will do.
-
-Some of the random, not necessarily connected thoughts I've had:
-
-*Technology should empower users. Like a hammer, or even a pencil.*
-
-*Learning should be curiosity-driven. Teaching should be personal.*
-
-*Many moral paradoxes are easily resolved if you're willing to make less
-money.*
-
-Privately, an agent can be a father, a friend, an inspiring force in the life of a young man or woman. We are sometimes as important as priests or poets, but until we dedicate ourselves to worthier goals than getting a illegal phone number, we are poets of emptiness.
-
-I have said "later" to most anything that required true sacrifice. Later I will spend a weekend reading real books, not just magazines. Later I will visit my grandmother who is 100 and unable to really know the difference. Later I will visit the clients whose careers are over, but of course I promised to stay in touch. Later later later later. It is too easy to say “later” because we all believe our work to be too important to stop, minute to minute, for something that might interfere with the restless and relentless pursuit of forward motion. Of greater success.
