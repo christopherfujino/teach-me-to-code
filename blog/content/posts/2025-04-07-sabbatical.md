@@ -1,67 +1,19 @@
 ---
 title: 'Google -> Sabbatical'
-date: 2025-04-18 00:00:00
+date: 2025-06-16 00:00:00
 tags: ['sabbatical', 'career', 'google']
-draft: true
 ---
 
-Last month I resigned my position at Google.
+After 6 years at Google, I resigned this past March.
 
-I never intended to work at Google for as long as I did. In fact, I never
-intended to work at Google in the first place. Without having a formal
-computer science background, I assumed that getting a job at a big tech
-company was out of the question and so I never even considered whether or not
-I would like such a job.
+Rather than explaining why I left, I think it's easier to explain why I stayed
+as long as I did. To begin with, I never aspired to work at a big tech
+company. Because I don't have any formal computer science education, I assumed
+that big tech companies would never hire me. Once I was hired by Google, I saw
+it as a big experiment. I was excited by the opportunity to learn about building software from some of the best in the industry; but I was also anxious about being a small cog in a huge wheel. I had come from a small startup where I knew everyone's name.
 
-When I was recruited for a role at Google, I knew I had to interview for it,
-if for no other reason than that I would always wonder what would it would
-have been like. Once I was actually made an offer, I experienced a mixture of
-excitement, fear, and apprehension. Obviously, it felt good to be wanted.
+So why did I stay at Google for as long as I did? First, I was working on an interesting product that was a constant source of challenging problems to solve. I have a very niche passion for developer tooling. Especially terminal based. Especially open source. So I consider myself incredibly blessed to have been paid a ridiculous amount of money by Google to work on open source, CLI developer tooling. The other reason I stayed was that I was working with a great team of people who were excellent at their job and who I enjoyed working with and cared about.
 
-But I had a lot of trepidation about working at a big company. And Google was
-an even bigger company than I realized. At the time I was working at a small
-startup where I knew everyone's name and--even more importantly--I got along
-well with everyone.
+After 6 years, I feel like I achieved the goals I had set for myself when I started. I'm proud of my work during that time, and extremely grateful for what I learned; for me, it was my computer science education. But I had also become extremely frustrated and disillusioned by the tech industry. When I decided I was leaving Google and looked at other opportunities, I had the feeling that I would be similarly dissatisfied at these other jobs. In other words, most of the things I disliked about my job were systemic across the industry (e.g. prioritizing quarterly earnings reports over long-term vision, monetization strategies founded on keeping customers addicted to services rather than creating valuable products).
 
-When I started my new job, I secretly made a goal with myself to stay at the
-job for one year. I figured that--sooner or later--one of two things would
-happen:
-
-1. I would get fired for "not being a team player" or for being too
-frank and speaking my mind in front of the wrong executive; or
-1. I would rage
-quit, fed up with the corporate bureaucracy or decision-making that placed
-profit percentage points over the well-being of people.
-
-I figured, even if I were miserable, I should try to stick it out for at least
-a year. I must admit one of my motivations for taking the job was that I knew
-it would be a boon on my résumé for the rest of my career. Surely I could
-make it one year.
-
-It turns out, I spent 6 years at Google, all on the same team. This unexpected
-longevity (if this sounds like sarcasm it is not, in the SF Bay Area 6 years
-on the same team is an accomplishment) owes to 2 factors:
-
-1. I was working on an interesting product that I genuinely thought was cool.
-I've never publicly talked about how cool it is, because I wouldn't expect
-anyone to believe me while I worked there. However, I'm now unemployed, with
-no particular vested interest in seeing [Flutter](https://flutter.dev/)
-succeed, yet I will say that it is both incredibly well-engineered and has
-a great developer experience. It was also a constant source of interesting
-and difficult problems to solve.
-1. I was working with a great team of people who were excellent at their job
-and who I learned a lot from. And who I enjoyed working with and cared
-about.
-
-At the end of the day I became fed up with the corporate bureaucracy and with
-decision-making that placed profit percentage points over the well-being of
-people. There were some other things that I hadn't anticipated that I also
-became fed up with, but it's not my goal to enumerate gripes. In fact, I was
-convinced it was necessary for me to leave because I found myself complaining
-about work so often.
-
-So I've decided to take a sabbatical.
-
-I'm taking time to detox myself from all the negatives of what I didn't like
-about my previous job--and the industry in general--and instead think about
-what positive things I can and will do.
+So I've been on a sabbatical for the past 3 months. It's been liberating to think of myself as a hobbyist programmer. It brings me back to when I first learned to program, and I didn't know anything about best practices, but I experienced excitement and joy just from making the computer do the thing that I told it to do. If I were currently a professional software engineer on a break, I would probably learn Rust and start contributing to the Rust re-write of coreutils. Instead I've been solving [Project Euler](https://projecteuler.net/) problems with K&R C in a PDP-11 emulator.
