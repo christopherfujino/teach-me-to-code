@@ -11,7 +11,8 @@ addEventListener("DOMContentLoaded", function () {
   walkTree(globalContainer, function (el) {
     const style = el.style;
     if (!!style) {
-      style.visibility = "hidden";
+      // disable effect for now
+      style.visibility = "visible";
     }
   });
 
