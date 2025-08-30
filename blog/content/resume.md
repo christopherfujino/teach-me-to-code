@@ -4,7 +4,7 @@
 "jobs": [
   {
     "company": "Google",
-    "tenure": "Nov 2022 - Present",
+    "tenure": "Nov 2022 - Mar 2025",
     "title": "Senior Software Engineer",
     "role": "Tech Lead, Flutter Tooling",
     "description": "<div class=p>Flutter</a> is Google's open source, cross-platform application framework allowing a single codebase to target Android, iOS, Windows, macOS, Linux, and the web.</div><div class=p>Flutter's CLI tool orchestrates Flutter app builds encompassing compilation across Dart for a developer's code along with Java/Kotlin, Objective-C/Swift, C++, or JavaScript for native code. This also includes debug-mode builds, involving stateful hot reload of Dart code just in time compiled and release builds ahead of time compiled to machine code.</div><div class=p>I lead design review, crash & issue triage, and code review of both full time employees and open source contributors. Features I've built include:</div><ul><li>Flutter Preview device, allowing developers to experience Flutter's stateful hot reload without requiring a native build toolchain</li><li>Font tree-shaking for the web, reducing the download size of icon fonts by removing code points not referenced from the app</li><li>Infrastructure for codesigning pre-compiled binaries that are distributed to end users</li>"
