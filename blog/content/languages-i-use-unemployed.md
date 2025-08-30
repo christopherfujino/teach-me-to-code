@@ -10,6 +10,8 @@
 - Incredibly confusing type errors
     - if clauses sometimes need paranetheses
     - because of currying, compiler can't catch sending too few args
+    - usually after one type error, the compiler blows up
+- Weak STDLIB
 - Worst comment syntax
 - Maintaining interface files can be annoying
 
@@ -25,6 +27,7 @@
 - Panic/Defer
 - Fast compilation paired with statically linked binaries feels like the best
 compromise between interpreted and compiled language
+- Great STDLIB, batteries included SDK
 
 ### Cons
 - Package/Module setup outside of a monorepo

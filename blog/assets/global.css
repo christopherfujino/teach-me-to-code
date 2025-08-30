@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffcc66;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, .p, footer, nav, pre.chroma {
+h1, h2, h3, h4, h5, h6, p, ul, ol, .p, footer, nav, pre.chroma, hr {
   margin-block-end: 1em;
 }
 
@@ -58,8 +58,16 @@ a:hover {
 }
 
 hr {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  visibility: hidden;
+  border: 0px;
+}
+
+hr::after {
+  /* TODO: figure out how to escape multiple non-breaking spaces */
+  content: "* * *";
+  text-align: center;
+  margin: auto;
+  display: block;
 }
 
 /* https://github.com/chriskempson/base16-default-schemes/blob/master/eighties.yaml */
