@@ -18,6 +18,7 @@ draft: true
 - Weak STDLIB
 - Worst comment syntax
 - Maintaining interface files can be annoying
+- Functors can be awkward (more synctactically heavyweight than interfaces)
 
 ## Go
 
