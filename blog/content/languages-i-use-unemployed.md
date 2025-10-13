@@ -11,8 +11,8 @@ draft: true
 - Sum types + Pattern matching
 
 ### Cons
+- ambiguous syntax (if then, pattern matching, you sometimes need parentheses)
 - Incredibly confusing type errors
-    - if clauses sometimes need paranetheses
     - because of currying, compiler can't catch sending too few args
     - usually after one type error, the compiler blows up
 - Weak STDLIB
