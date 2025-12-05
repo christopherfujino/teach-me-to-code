@@ -4,4 +4,4 @@ Certainly, I would expect someone with 30 years of experience to have some techn
 
 In other words, having N years of experience tells me little about the particular topic the person is about to rant about, and I feel like as engineers we are prone to be overconfident about the things we hate.
 
-We are all special, having made our own unique trail through the wild jungle of software complexity. 
+We are all special, having made our own unique trail through the wild jungle of software complexity.

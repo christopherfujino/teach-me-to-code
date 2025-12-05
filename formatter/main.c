@@ -28,6 +28,13 @@ int main(int argc, char **argv) {
   const char *target_path = argv[1];
 
   FILE *target = fopen(target_path, "r");
+  if (target == NULL) {
+    const size_t STRING_LEN = 256;
+    char buffer[STRING_LEN + 1]; // add a byte for the '/0'
+    snprintf(buffer, STRING_LEN, "Could not open \"%s\"", target_path);
+    perror(buffer); // TODO sprintf
+    exit(1);
+  }
 
   int current = fgetc(target);
   Buffer *buffer = create_buffer("");
