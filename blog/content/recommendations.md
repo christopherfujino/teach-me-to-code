@@ -14,6 +14,12 @@
     "date": "2007-11-29"
   },
   {
+    "url": "https://queue.acm.org/detail.cfm?id=3212479",
+    "title": "C Is Not a Low-level Language",
+    "author": "David Chisnall",
+    "date": "2018-04-30"
+  },
+  {
     "url": "https://stopa.io/post/250",
     "title": "Classes are just a fancy way of writing higher order functions",
     "author": "Stepan Parunashvili",
