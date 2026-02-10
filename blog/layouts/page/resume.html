@@ -28,8 +28,12 @@
     <div class=p style="display: inline-block;">
       <div>
         <em class=base16-0D>{{ .company }}</em>
-        <span>&#x21D2;</span>
-        <span>{{ .title }}</span>
+        {{ if compare.Eq .title nil }}
+          <!-- no op -->
+        {{ else }}
+          <span>&#x21D2;</span>
+          <span>{{ .title }}</span>
+        {{ end }}
       </div>
       <div class=base16-03>{{ .role }}</div>
     </div>
