@@ -23,6 +23,7 @@ performance
 parens and letting the formatter remove the redundant ones
     - if then
     - pattern matching
+    - See [tql@c4f3e1263a](http://pea-central.local/git/local/tql/commit/?id=c4f3e1263ade0750640f8bbe88972945a60db4c4)
 - Incredibly confusing type errors
     - because of currying, compiler can't catch sending too few args
     - usually after one type error, the compiler blows up
@@ -44,38 +45,7 @@ parens and letting the formatter remove the redundant ones
 
 ## Go
 
-### Pros
-- Simplicity
-  - Writing algorithms **feels** good
-- Goroutines and Channels
-- Interfaces
-    - Reader/Writers are an incredible abstraction
-- Batteries included
-    - JSON serialization/deserialization
-    - Templating engine
-- Named return values
-- Panic/Defer
-- Fast compilation paired with statically linked binaries feels like the best
-compromise between interpreted and compiled language
-- Great STDLIB, batteries included SDK
-
-### Cons
-- Package/Module setup outside of a monorepo
-  - Directory based privacy is annoying compared to file-based
-  - Capitalization for privacy is annoying (prefer Dart's)
-- No sum types, unions, or enums
-  - No exhaustiveness checks
-  - Error handling
-- Interfaces
-- Statement semantics leads to some awkward code:
-```go
-var exitCode = 0
-if didBuild {
-  exitCode = 1
-}
-
-os.Exit(exitCode)
-```
+See standalone doc.
 
 ## Ultimate Language
 
