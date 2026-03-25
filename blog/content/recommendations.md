@@ -14,6 +14,12 @@
     "date": "2007-11-29"
   },
   {
+    "url": "https://tinyclouds.org/rant/",
+    "title": "I hate almost all software",
+    "author": "Ryan Dahl",
+    "date": "2011-09-29"
+  },
+  {
     "url": "https://queue.acm.org/detail.cfm?id=3212479",
     "title": "C Is Not a Low-level Language",
     "author": "David Chisnall",

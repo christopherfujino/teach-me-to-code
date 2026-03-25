@@ -19,27 +19,29 @@ performance
 - First class modules are a great abstraction
 
 ### Cons
-- Can be ambiguous when an expression ends; I end up wrapping many things in
-parens and letting the formatter remove the redundant ones
-    - if then
-    - pattern matching
-    - See [tql@c4f3e1263a](http://pea-central.local/git/local/tql/commit/?id=c4f3e1263ade0750640f8bbe88972945a60db4c4)
-- Incredibly confusing type errors
-    - because of currying, compiler can't catch sending too few args
-    - usually after one type error, the compiler blows up
-- Weak STDLIB
+- Syntax
+    - Can be ambiguous when an expression ends; I end up wrapping many things in
+    parens and letting the formatter remove the redundant ones
+        - if then
+        - pattern matching
+        - See [tql@c4f3e1263a](http://pea-central.local/git/local/tql/commit/?id=c4f3e1263ade0750640f8bbe88972945a60db4c4)
+    - Incredibly confusing type errors
+        - because of currying, compiler can't catch sending too few args
+        - usually after one type error, the compiler blows up
+    - Incredibly confusing type errors
+        - if clauses sometimes need parentheses
+        - currying
+            - compiler can't catch sending too few args
+            - with named params, order of params matters
+        - *some* refactors can break the compiler until they're finished
+    - named arguments, optional arguments confusing
 - Bad comment syntax
     - They allow nesting, so not as bad as C, but otherwise awful
+- Weak STDLIB
 - No module cycles can be a huge pain
-- Incredibly confusing type errors
-    - if clauses sometimes need parentheses
-    - currying
-        - compiler can't catch sending too few args
-        - with named params, order of params matters
-    - *some* refactors can break the compiler until they're finished
 - Tail-call optimization obscures stacktraces
 - Namespacing can be confusing; it is easy to accidentally shadow another name
-- Macros are pretty magical
+- ~Macros~ppx are pretty magical
 - Maintaining interface files can be annoying
 - Functors can be awkward (more synctactically heavyweight than interfaces)
 
