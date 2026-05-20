@@ -10,7 +10,7 @@ enableGitInfo = true
   gitMainBranch = "master"
 
 [permalinks]
-  blog = "/:filename/"
+  blog = "/:contentbasename/"
 
 [taxonomies]
   tag = 'tags'

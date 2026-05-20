@@ -9,9 +9,23 @@
       <td>chris</td>
       <td>chris</td>
       <td style="text-align: right"><span>
+        {{- /*
+        `with` will bind an expression to `.`, and execute the inner
+        block if the expression was truth-y
+           /* -}}
+
+        {{ with .File }}
+          {{ $fileInfo := os.Stat . }}
+          {{ $fileInfo.Size }}
+        {{ else }}
+          No File!
+        {{ end }}
+
+        {{- /*
         {{ $file := os.Stat .File }}
         {{ $fileInfo := $file.FileInfo }}
         {{ $fileInfo.Size }}
+        */ -}}
       </span></td>
       <td>{{ .Date.Format "Jan" }}</td>
       <td>{{ .Date.Format "02" }}</td>
