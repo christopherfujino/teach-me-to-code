@@ -2,6 +2,7 @@
 title: 'A Genealogy of Neovim'
 date: 2026-05-18 00:00:00
 tags: ['vim', 'history', 'text editors']
+draft: true
 ---
 
 ```goat
