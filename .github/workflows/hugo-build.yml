@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     container:
       # https://hub.docker.com/_/golang
-      # Bookworm == Debian 12, stable as of 11/26/23
-      image: golang:1.21.4-bookworm
+      # Trixie == Debian 13, stable as of 2026-05-20
+      image: golang:1.26.3-trixie
 
     steps:
       # Check out repo
