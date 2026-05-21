@@ -1,0 +1,26 @@
+{{ define "main" }}
+  {{ `<!-- layouts/recommendations/page.html -->` | safeHTML }}
+
+  <h1>Recommendations</h1>
+  <p>Noteworthy writings by other authors.</p>
+
+  {{ $path := "data.json" }}
+  {{ with .Resources.Get $path }}
+    {{ with . | transform.Unmarshal }}
+      {{ range .recommendations }}
+
+      <p>
+        <!-- https://github.com/gohugoio/hugo/commit/37490ee27af10f14aa40bd5e2ae39952b21ac1bb -->
+        <!-- TODO right-pad author -->
+        <span>{{ dateFormat "Jan 02 2006" .date }} - </span>
+        <a href="{{ .url }}">{{ .title }}</a>
+        <span>- {{ .author }}</span>
+      </p>
+
+      {{ end }}
+    {{ end }}
+  {{ else }}
+    {{ errorf "Unable to get page resource %q" $path }}
+  {{ end }}
+
+{{ end }}

@@ -1,5 +1,5 @@
 baseURL = "https://www.christopherfujino.com"
-languageCode = "en-us"
+locale = "en-us"
 title = "Teach Me To Code"
 # https://gohugo.io/getting-started/configuration/#enablegitinfo
 enableGitInfo = true

@@ -1,3 +1,5 @@
+{{ `<!-- layouts/single.html -->` | safeHTML }}
+
 {{ define "main" }}
 
 <h1>{{ .Title }}</h1>
