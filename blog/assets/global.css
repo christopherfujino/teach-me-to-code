@@ -1,136 +1,29 @@
-@font-face {
-  font-family: "Mononokiz";
-  {{ with resources.Get "mononoki-Regular.ttf" }}
-  src: url("{{ .RelPermalink }}") format("truetype");
-  {{ end }}
-}
-
 #global-container {
   max-width: 55em;
   margin: auto;
-  margin-block-start: 1em;
-  /* The animation effect is annoying */
-  visibility: visible;
 }
 
-footer {
-  margin-block-start: 1em;
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: serif;
+  font-size: 24px;
 }
 
-html {
-  background-color: #2d2d2d;
-  color: #d3d0c8;
-}
-
-* {
-  font-size: 1em;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  font-family: "Mononokiz";
-}
-
-ul {
-  padding-inline-start: 4em;
+code {
+  font-family: monospace;
+  font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  /* base0A - Classes, Markup Bold, Search Text Background */
-  color: #ffcc66;
-}
-
-h1, h2, h3, h4, h5, h6, p, ul, ol, .p, footer, nav, pre.chroma, hr {
-  margin-block-end: 1em;
-}
-
-pre.chroma {
-  margin-left: 2em;
-  margin-right: 2em;
+  color: #666;
 }
 
 a {
-  /* base08 - Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted */
-  color: #f2777a;
+  color: #d11;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
 }
-
-hr {
-  visibility: hidden;
-  border: 0px;
-}
-
-hr::after {
-  /* TODO: figure out how to escape multiple non-breaking spaces */
-  content: "* * *";
-  text-align: center;
-  margin: auto;
-  display: block;
-}
-
-/* https://github.com/chriskempson/base16-default-schemes/blob/master/eighties.yaml */
-.base16-00 {color: #2d2d2d;}
-.base16-01 {color: #393939;}
-.base16-02 {color: #515151;}
-.base16-03 {color: #747369;}
-.base16-04 {color: #a09f93;}
-.base16-05 {color: #d3d0c8;}
-.base16-06 {color: #e8e6df;}
-.base16-07 {color: #f2f0ec;}
-.base16-08 {color: #f2777a;}
-.base16-09 {color: #f99157;}
-.base16-0A {color: #ffcc66;}
-.base16-0B {color: #99cc99;}
-.base16-0C {color: #66cccc;}
-.base16-0D {color: #6699cc;}
-.base16-0E {color: #cc99cc;}
-.base16-0F {color: #d27b53;}
-
-.base16-bg-00 {background-color: #2d2d2d;}
-.base16-bg-01 {background-color: #393939;}
-.base16-bg-02 {background-color: #515151;}
-.base16-bg-03 {background-color: #747369;}
-.base16-bg-04 {background-color: #a09f93;}
-.base16-bg-05 {background-color: #d3d0c8;}
-.base16-bg-06 {background-color: #e8e6df;}
-.base16-bg-07 {background-color: #f2f0ec;}
-.base16-bg-08 {background-color: #f2777a;}
-.base16-bg-09 {background-color: #f99157;}
-.base16-bg-0A {background-color: #ffcc66;}
-.base16-bg-0B {background-color: #99cc99;}
-.base16-bg-0C {background-color: #66cccc;}
-.base16-bg-0D {background-color: #6699cc;}
-.base16-bg-0E {background-color: #cc99cc;}
-.base16-bg-0F {background-color: #d27b53;}
-
-.ls-l-table tr td {
-  vertical-align: top;
-  white-space: nowrap;
-  padding: 0em 0.5em 0em 0em;
-}
-
-.ls-l-table tr td:last-child {
-  padding: 0em;
-  white-space: normal;
-}
-
-/* faux-terminal cursor */
-/*
-.cursor-blink {
-  animation-duration: 0.75s;
-  animation-name: cursor-blink-keyframe;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes cursor-blink-keyframe {
-  0%,49% {
-    opacity: 100%;
-  }
-
-  50%,100% {
-    opacity: 0%;
-  }
-} */

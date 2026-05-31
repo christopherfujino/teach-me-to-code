@@ -1,8 +1,10 @@
 {{ define "main" }}
 
+<br>
+
 <div style="display: inline-block">
-  <em class=base16-0A>Christopher Fujino</em>
-  <div>Senior Software Engineer</div>
+  <b>Christopher Fujino</b>
+  <div><em>Senior Software Engineer</em></div>
 </div>
 
 <div style="float: right; text-align: right;">
@@ -27,7 +29,7 @@
   <p>
     <div class=p style="display: inline-block;">
       <div>
-        <em class=base16-0D>{{ .company }}</em>
+        <em>{{ .company }}</em>
         {{ if compare.Eq .title nil }}
           <!-- no op -->
         {{ else }}
@@ -35,10 +37,10 @@
           <span>{{ .title }}</span>
         {{ end }}
       </div>
-      <div class=base16-03>{{ .role }}</div>
+      <div>{{ .role }}</div>
     </div>
     <div style="float: right;">
-      <div class=base16-0B>{{ .tenure }}</div>
+      <div>{{ .tenure }}</div>
     </div>
     <span style="clear: both; display: table;"></span>
     <div>

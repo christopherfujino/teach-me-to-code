@@ -9,14 +9,14 @@
   },
   {
     "company": "Google",
-    "tenure": "April 2024 - Mar 2025",
+    "tenure": "Apr 2024 - Mar 2025",
     "title": "Senior Software Engineer",
     "role": "Engineering Lead, Flutter Engineering Productivity",
     "description": "<div class=p>Flutter</a> is Google's open source, cross-platform application framework allowing a single codebase to target Android, iOS, Windows, macOS, Linux, and the web.</div><div class=p>I lead a team that owned three infrastructure services for Flutter maintainers and users:</div><ul><li>Infra: continuous integration for Flutter open source pull requests and merged commits.</li><li>Releases: ensuring reproducible builds and timely hotfix patches of the Flutter SDK for beta and stable release channels</li><li>Devicelab: manage a data center of physical Android, iOS, macOS, Windows and Linux devices that ensure every commit to the Flutter SDK passes an integration test suite across these platforms.</li></ul></li>"
   },
   {
     "company": "Google",
-    "tenure": "Nov 2022 - April 2024",
+    "tenure": "Nov 2022 - Apr 2024",
     "title": "Senior Software Engineer",
     "role": "Tech Lead, Flutter Tooling",
     "description": "<div class=p>Flutter's CLI tool orchestrates Flutter app builds encompassing compilation across Dart for a developer's code along with Java/Kotlin, Objective-C/Swift, C++, or JavaScript for native code. This includes debug-mode builds, involving stateful hot reload of Dart code just in time compiled and release builds ahead of time compiled to machine code.</div><div class=p>I lead design review, crash & issue triage, and code review of both full time employees and open source contributors. Features I've built include:</div><ul><li>Flutter Preview device, allowing developers to experience Flutter's stateful hot reload without requiring a native build toolchain</li><li>Font tree-shaking for the web, reducing the download size of icon fonts by removing code points not referenced from the app</li><li>Infrastructure for codesigning pre-compiled binaries that are distributed to end users</li>"
