@@ -1,22 +1,22 @@
 #global-container {
-  max-width: 55em;
+  max-width: 50rem;
   margin: auto;
 }
 
 body {
-  background-color: #fff;
+  background-color: #F0F0DF;
   color: #000;
   font-family: serif;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 code {
   font-family: monospace;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #666;
+  color: #707070;
 }
 
 a {

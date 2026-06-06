@@ -9,12 +9,12 @@
     {{ with . | transform.Unmarshal }}
       {{ range .recommendations }}
 
-      <p>
+      <p style="display: grid; grid-template-columns: 6em 1fr;">
         <!-- https://github.com/gohugoio/hugo/commit/37490ee27af10f14aa40bd5e2ae39952b21ac1bb -->
         <!-- TODO right-pad author -->
-        <span>{{ dateFormat "Jan 02 2006" .date }} - </span>
-        <a href="{{ .url }}">{{ .title }}</a>
-        <span>- {{ .author }}</span>
+        <span>{{ dateFormat "2006-01-02" .date }}</span>
+        <span><a href="{{ .url }}">{{ .title }}</a>;
+        {{ .author }}</span>
       </p>
 
       {{ end }}
