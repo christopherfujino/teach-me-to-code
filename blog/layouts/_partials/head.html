@@ -15,8 +15,6 @@
       {{ end }}
     {{ end }}
   {{ end }}
-  {{ $syntaxCss := resources.Get "syntax.css" | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" type="text/css" href="{{ $syntaxCss.Permalink }}" />
   {{ with resources.Get "main.js" | resources.Minify | resources.Fingerprint }}
     <script src="{{ .Permalink }}"></script>
   {{ end }}

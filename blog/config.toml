@@ -50,7 +50,8 @@ enableGitInfo = true
     noClasses = false
     noHl = false
     # https://xyproto.github.io/splash/docs/longer/all.html
-    style = 'algol_nu'
+    #style = 'algol_nu'
+    style = 'darcula'
     tabWidth = 2
   # https://gohugo.io/getting-started/configuration-markup/
   [markup.goldmark.renderer]

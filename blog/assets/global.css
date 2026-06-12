@@ -13,6 +13,7 @@ body {
 code {
   font-family: monospace;
   font-size: 16px;
+  color: #303030;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #d11;
+  color: #DD4020;
   text-decoration: none;
 }
 
