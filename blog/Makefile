@@ -3,6 +3,9 @@
 serve: ../third_party/bin/hugo
 	../third_party/bin/hugo serve --buildDrafts --buildFuture
 
+serve-prod: ../third_party/bin/hugo
+	../third_party/bin/hugo serve
+
 preview:
 	ls content/posts | \
 		sed 's/\.md$\//' | \
