@@ -266,23 +266,13 @@ They did not randomly generate the private keys, but picked very small numbers.
 
 -->
 
-[^1]: https://emudhra.we-have-a-problem.com/
-[^2]: https://bugzilla.mozilla.org/show_bug.cgi?id=2083449
-[^3]: https://bug2083449.bmoattachments.org/attachment.cgi?id=9664786
-[^4]: https://www.ptinews.com/story/business/vulnerable-keys-were-created-but-never-put-to-commercial-use-investigation-on-emudhra-co-founder/4187569
+
 [^5]: For the purposes of this article, references to a "browser" will refer
 to one of the big 4: Apple's Safari, Google's Chrome, Microsoft's Edge, or
 Mozilla's Firefox. There are many other browsers, and most of them behave the
 same way. Some obscure ones may behave differently.
 [^6]: https://en.wikipedia.org/wiki/Certificate_authority.
-[^7]: Password security will be a future blog post, and there is a lot of
-nuance here. If all the characters are randomly selected from the same set, a
-longer password will be more secure. However, the password "znawlzddeo" is
-probably more secure than "counterrevolutionaries" because the former is a
-combination of 10 random lower case characters of which there are 141 trillion
-possible, while the latter was picked out of a dictionary with around 100,000 possible words.
 [^8]: "The CA of concern in this case is called eMudhra, which boasts of having issued over 60 million digital certificates to help usher in a world of digital trust," https://www.theregister.com/security/2026/10/20/indian-certification-authority-emudhras-private-keys-compromised-one-of-them-was-the-number-4/5304312
-[^9]: https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business
 [^10]: https://bugzilla.mozilla.org/show_bug.cgi?id=2083449#c5
 [^11]: The message he signed was "We have a problem here - Wayne", https://bugzilla.mozilla.org/attachment.cgi?id=9664066
 [^12]: https://en.wikipedia.org/wiki/Brute-force_attack
@@ -293,3 +283,5 @@ attack would succeed after guessing half of these, which is 2^192 / 2 which is a
 [^14]: https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/
 [^15]: https://bugzilla.mozilla.org/show_bug.cgi?id=2083449#c2
 [^16]: https://bugzilla.mozilla.org/show_bug.cgi?id=2083449#c1
+[^4]: https://www.ptinews.com/story/business/vulnerable-keys-were-created-but-never-put-to-commercial-use-investigation-on-emudhra-co-founder/4187569
+[^9]: https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business
