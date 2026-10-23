@@ -1,5 +1,5 @@
 ---
-title: The Tragic Tale of the Certificate Authority Who Used the Key "4"
+title: The Certificate Authority Who Used the Key "4"
 date: 2026-10-22 00:00:00
 draft: true
 ---
