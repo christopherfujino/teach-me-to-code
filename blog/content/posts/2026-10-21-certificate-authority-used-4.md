@@ -16,15 +16,15 @@ users? Let's break it down...
 
 The worst case scenario from this incident would be that malicious hackers set
 up a fake web service impersonating one that you trust. Let's say you want to
-initiate a wire transfer from your bank to an escrow company to purchase a
-house. However, when you log on to what you think is your bank's website, it's
+initiate a wire transfer from your bank to dealership to purchase a
+car. However, when you log on to what you think is your bank's website, it's
 actually a scam company's front. It looks like your bank's website; however,
 when you put in your banking details, they save it, pretend your wire transfer
 went through, and instead wire money into their own account.
 
 Could this happen to you today? It depends on if your browser and/or operating
-has been updated recently enough to have stopped trusting the compromised
-certificates.
+system has been updated recently enough to have stopped trusting the
+compromised certificates.
 
 ## What Should I Do?
 
@@ -65,36 +65,35 @@ browser and the server so that any hackers listening to the connection (say in
 a coffee shop, snooping in on your wifi connection) cannot actually see the
 data that is being sent in either direction.
 
-For understanding the current incident, it is the first of these features that
-we are interested.
+It is the first of these features that is relevant to the current incident.
 
-So how can one computer (in this case your bank's web server) prove to another
-(your computer, and the browser running on it) that it is who it says it is?
-The answer is by using a third party who is trusted by both. We call this
-third party a **Certificate Authority**[^6] (or CA). First, the entity who wants to
-prove their identity online (in this case "My Bank") must prove their identity
+So how can one computer prove to another that it is who it says it is?
+The answer is by using a trusted third party. With digital identities, we call
+this third party a **Certificate Authority**[^6]. First, the entity who wants to
+prove their identity online must prove their identity
 to the certificate authority. Then the certificate authority issues a
-**certificate** to the entity that "proves" the entity "My Bank" owns and
-operates the domain name "https://www.my-bank.com". Now, when a client (like
-you and your browser) navigate to that URL:
+**certificate** to the entity that "proves" the entity is who it says it is.
 
-1. The client requests the certificate from the server
+For our banking example, "My Bank" will prove to the certificate authority
+that it owns and operates "https://www.my-bank.com". When you and your browser
+navigate to that URL:
+
+1. The browser requests the certificate from the server.
 2. The server provides the certificate that it received from the certificate
-authority
-3. Once the client receives the certificate, it verifies the URL name on it,
-the expiration date, and most importantly, the digital signature on it from
-the certificate authority
-4. If the client does not recognize the certificate authority or the
+authority.
+3. Once the it receives the certificate, the client verifies the URL on it,
+the expiration date, and the digital signature on it from
+the certificate authority.
+4. If the browser does not recognize the certificate authority or the
 certificate has expired, then the connection fails and the user will be
 presented with an error message that it couldn't verify the identity of the
 server.
 5. If the client *does* recognize the certificate authority, it will check
-that it *was* in fact the actual certificate authority who signed the
-certificate, and not some malicious hacker who forged their own certificate.
+that signature on the certificate actually came from that authority,
+and not some malicious hacker who forged their own certificate.
 
-But how do you *sign* a digital document, and how can someone looking at a
-signature verify that *only* the entity who claims to have signed it *could*
-have signed it?
+But how do you *sign* a digital document? And how can someone verify who
+signed it?
 
 Digital signatures use a system where entities who want to sign documents
 (in our example, a certificate authority) generates two keys:
@@ -134,7 +133,7 @@ these public keys. He privately notifies Apple, Google, Mozilla, Microsoft, and
 eMudhra of his findings, proving his discovery by signing a message[^11] with the
 private keys he discovered.
 
-How did Wayne guess the private keys? With a traditional password
+How did Wayne guess the private keys? A traditional password
 system can be broken with enough time by guessing and trying every possible
 password. This strategy is called **brute force**[^12]. Similarly, you can
 brute force a private key if you have the public key by guessing every
@@ -145,7 +144,13 @@ The reason most people don't do this is because private keys are very large
 numbers, so it would take a *very long* time to guess the key. The private
 keys eMudhra generated were 384 bits which can represent whole numbers up to
 3 with 115 zeroes. Using the best modern strategies for guessing private keys,
-the average number of guesses would be approximately 3 with 57 zeroes[^13].
+the average number of guesses would be approximately 3 with 57 zeroes[^13]. To
+put this number in context, the approximate number of atoms in the universe is
+1 with 50 zeroes[^17], about 10 million times smaller than the average number
+of guesses it would take to guess this private key. If you could generate and
+test a private key in 1 millisecond (significantly faster than I can on my
+desktop), it would take 7 with 36 zeroes times the estimated age of the
+universe to find the correct private key matching a given public key[^18].
 
 But Wayne tried to guess these keys anyway, and succeeded because one of them
 was the number 4, another the number 56[^14]. This is equivalent to if you
@@ -285,3 +290,9 @@ attack would succeed after guessing half of these, which is 2^192 / 2 which is a
 [^16]: https://bugzilla.mozilla.org/show_bug.cgi?id=2083449#c1
 [^4]: https://www.ptinews.com/story/business/vulnerable-keys-were-created-but-never-put-to-commercial-use-investigation-on-emudhra-co-founder/4187569
 [^9]: https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business
+[^17]: https://sciencenotes.org/how-many-atoms-are-in-the-world/
+[^18]: At 1 millisecond per key, it would take 9.9e+46 years to test 3.1e+57
+keys. If the age of the universe is 13.8 billion years (https://www.aanda.org/articles/aa/full_html/2020/09/aa33910-18/aa33910-18.html), it would take 7.2e+36
+times the age of the universe to test 3.1e+57 keys. And this is only the
+average number of attempts to find the private key, it could take as much as
+twice that long.
