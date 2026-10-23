@@ -141,9 +141,11 @@ possible private key, signing a document with it, and seeing if it can be
 verified with the real public key.
 
 The reason most people don't do this is because private keys are very large
-numbers, so it would take a *very long* time to guess the key. The private
-keys eMudhra generated were 384 bits which can represent whole numbers up to
-3 with 115 zeroes. Using the best modern strategies for guessing private keys,
+numbers, so it would take a *very long* time to guess the key. The method
+that eMudhra used to generate their keys can generate approximately
+<span style="overflow-wrap: break-word;">39,402,006,196,394,480,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000</span>
+(or 3 with 115 zeroes) possible keys.
+Using the best modern strategies for guessing private keys,
 the average number of guesses would be approximately 3 with 57 zeroes[^13]. To
 put this number in context, the approximate number of atoms in the universe is
 1 with 50 zeroes[^17], about 10 million times smaller than the average number
@@ -201,7 +203,7 @@ This, at least, is a happy ending to this sad tale.
 
 What went well was:
 
-1. Wayne is primary hero. He bothered to spend his own time checking the
+1. Wayne is the primary hero. He bothered to spend his own time checking the
 security of (presumably) random, year old certificate keys, and then promptly
 reported his discovery to the right parties.
 1. The right parties responded quickly, doing what they could to revoke the bad keys and communicating with each other.
@@ -232,44 +234,6 @@ might fail--demystifies them and better prepares us for when they inevitably
 will fail again.
 
 
-
-<!--
-teams from Google, Microsoft, Apple, Mozilla, and eMudhra that he had
-discovered 8 private encryption keys from the aforementioned company eMudhra.
-
-On October 17, 2026, a security researcher who goes only as "Wayne" emailed
-teams from Google, Microsoft, Apple, Mozilla, and eMudhra that he had
-discovered 8 private encryption keys from the aforementioned company eMudhra.
-
-These were important keys because eMudhra is a TLS certificate authority
-(CA); this means that any mainstream browser that allows you to access the
-modern web was trusting these keys to verify the identify of web servers you
-were connecting to.
-
-## Notes
-
-### What Happened?
-
-The intermediate CA eMudhra had 8 private keys compromised, reported by a
-researcher on October 17, 2026. 6 are TLS certificats, the other 2 are for
-Windows binary codesigning.
-
-### Timeline
-
-All times in UTC:
-
-- Apr 2025[^10]: eMudhra generates and publishes 8 keys
-- Oct 17 2026 18:05[^2]: Wayne discloses to eMudhra, Chrome, Apple, Microsoft, Mozilla
-that the keys are compromised
-- Oct 17 2026 21:28: "eMudhra acknowledged issue, said there's been no issuance beyond OCSP for G3B, but 'EM DV TLS CA - G3C' was live, disabled now"
-- Oct 17 2026 22:59: Mozilla "distrusts" the certs in a [private bug](https://bugzilla.mozilla.org/show_bug.cgi?id=2083382)
-- Oct 18 2026 09:38: eMudhra revokes the 8 certificates
-
-### Why?
-
-They did not randomly generate the private keys, but picked very small numbers.
-
--->
 
 
 [^5]: For the purposes of this article, references to a "browser" will refer
