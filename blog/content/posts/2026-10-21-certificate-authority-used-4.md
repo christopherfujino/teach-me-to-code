@@ -1,7 +1,7 @@
 ---
 title: The Certificate Authority Who Used the Key "4"
-date: 2026-10-22 00:00:00
-draft: true
+date: 2026-10-24 00:00:00
+draft: false
 ---
 
 On October 17, 2026, 8 private keys from Certificate Authority eMudhra were
@@ -9,8 +9,7 @@ compromised, leading (within the next few days) to the company revoking them
 and browsers from Apple, Google, and Microsoft to removing them from their
 lists of trusted certificates.
 
-So what do all these words mean and how does it impact ordinary computer
-users? Let's break it down...
+So what does that mean and how does it affect computer users?
 
 ## How Does This Affect Me?
 
@@ -42,7 +41,7 @@ these compromised keys, and attackers could fool you on them. You should
 all the tests. If it never passes the tests, stop using the device; it is
 **not** secure.
 
-## So What Exactly Are Certificates?
+## What Are Certificates?
 
 To describe what happened, it is important to establish a little context
 around how trust on the internet is intended to work.
@@ -121,7 +120,7 @@ it verifies that the certificate matches the public key it has, it assumes the
 server is who it says it is and it loads your banking site, and you are able
 to make your wire transfer.
 
-## What Did eMudhra Do?
+## What Did eMudhra Do Wrong?
 
 The company at the center of our current incident, eMudhra, is one of these
 certificate authorities that all the major browsers trust. They claim to have
